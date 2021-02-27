@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+:root {
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #2a2a2a;
+}
+
+
+/* Header*/
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+section {
+    padding: 70px 0;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+li {
+    margin: 15px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #868686;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #2a2a2a;
+    font-weight: 700;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero__image {
+    width: 400px;
+}
+
+.hero__logo {
+    height: 30px;
+    margin: 15px 0px;
+}
+
+.hero__navbar {
+    display: block;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.hero__container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+}
+
+.hero__texts {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.hero__title {
+    font-size: 2.8rem;
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+
+/* About */
+
+.presentation {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0px 0px;
+    max-width: 1200px;
+}
+
+.background--gray {
+    background-color: #f1f1f1;
+}
+
+.presentation__picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentation__copy {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 32px
+}
+
+.presentation__cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+.habilidades .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.habilidades__habilidad {
+    font-weight: 600;
+}
+
+
+/* Portafolio*/
+
+.portafolio .container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portafolio__subtitle {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.portafolio__item {
+    margin: 128px 0 !important;
+}
+
+.portafolio__item__text {
+
+    display: flex;
+    width: 100% !important;
+    
+    justify-content: flex-end !important;
+}
+
+.portafolio__item__text__titulo {
+    width: 400px;
+}
+
+.portafolio__item__text__titulo p{
+    line-height: 32px;
+}
+
+.portafolio__item__text--formato {}
+
+.portafolio__item__proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer */
+
+.footer {
+    background: var(--color-primary);
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__container-icons {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer__icon {
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fab.footer__icon {
+    line-height: 60px;
+}
+
+.subtitle {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.hero__subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    color: var(--color-primary);
+}
+
+
+/* Animation */
+
+.hero__subtitle {
+    animation: animated-text 2s steps(30, end) 1s 1 normal both;
+}
+
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 472px;
+    }
+}
