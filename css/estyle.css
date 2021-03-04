@@ -240,8 +240,8 @@ section {
 
     display: flex;
     width: 100% !important;
-    
     justify-content: flex-end !important;
+    margin-bottom: 16px !important;
 }
 
 .portafolio__item__text__titulo {
@@ -260,7 +260,9 @@ section {
     justify-content: center;
 }
 
-
+.portafolio__item__text__titulo a{
+    margin-bottom: 16px !important;
+}
 /* Footer */
 
 .footer {
