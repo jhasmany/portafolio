@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from '../assets/undraw_dev_productivity_umsq.svg'
+import imagen from '../images/undraw_dev_productivity_umsq.svg'
 
 const Slide = () => {
 

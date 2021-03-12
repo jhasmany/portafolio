@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link } from "react-router-dom";
-import '../pages/index.css'
+import { Link } from "gatsby"
 
 const Nav = () => {
 
