@@ -10,7 +10,10 @@ const Slide = () => {
                     <div className="hero__texts animate">
                         <h1 className="hero__title animate">Jhasmany Roque Chambi</h1>
                         <h2 className="hero__subtitle">
-                            Desarrollador Web y Movil<span className="txt-rotate" data-period="500" data-rotate='[ "Web.", "Móvil." ]'></span>
+                            Desarrollador Web<span className="txt-rotate" data-period="500"></span>
+                        </h2>
+                        <h2 className="hero__subtitle">
+                            y Móvil<span className="txt-rotate" data-period="500"></span>
                         </h2>
                     </div>
                     <div>
