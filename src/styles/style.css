@@ -376,7 +376,7 @@ section {
 
 @media screen and (max-width:414px) {
     .container{
-        width: 80%;
+        width: 80% !important;
         padding: 0 16px;
     }
     .hero__image{
@@ -414,7 +414,7 @@ section {
     }
     
     .portafolio__item__proyecto .image{
-        width: 380px;
+        width: 340px !important;
     }
 
     .contact {
